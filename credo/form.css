@@ -1,0 +1,294 @@
+*{
+
+margin: 0px;
+padding: 0px;
+
+
+}
+
+body{
+
+
+    background-image: url(background.png);
+     
+    background-size:cover;
+    
+
+}
+
+form{
+
+position: relative;
+left: 39%;
+top: 10px;
+color: white;
+border: 10px solid black;
+padding: 20px;
+border-radius: 50px;
+width: 280px;
+height: 880px;
+display: block;
+
+
+
+}
+
+.input-container{
+
+color: rgb(73, 240, 156);
+
+
+
+}
+
+.gender{
+
+position: relative;
+left: 50px;
+display: block;
+color: white;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.boy{
+
+position: relative;
+left: 111px;
+bottom: 5px;
+display: block;
+
+}
+.malelb{
+
+    position: relative;
+     left: 60px;
+     display: block;
+     top: 10px;
+}
+.girl{
+
+    position: relative;
+    left: 111px;
+    bottom: 20px;
+    display: block;
+    
+    }
+    .femalelb{
+    
+        position: relative;
+         left: 55px;
+         bottom: 5px;
+         
+    }
+
+    .trans{
+
+        position: relative;
+        left: 55px;
+        bottom: 20px;
+        display: block;
+
+    }
+
+    .translb{
+
+        position: relative;
+        left: 111px;
+        bottom: 36px;
+        display: block;
+        
+    }
+
+    .weblabel{
+
+ position: relative;
+ bottom: 35px;
+ color:white;
+ font-weight: bolder;
+ font-size: 20px;
+ display: block;
+ left: 25px;
+ text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+
+
+
+    }
+    .webo{
+
+    position: relative; 
+bottom: 20px;
+left: 25px;
+display: block;
+
+    }
+
+
+.birthlb{
+
+position: relative;
+bottom: 20px;
+left: 25px;
+color: white;
+font-size: 20px;
+font-weight: bold;
+display: block;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.birtho{
+ position: relative;
+bottom: 30px;
+left: 30px;
+display: block;
+
+}
+
+.worldlabel{
+
+color: white;
+position: relative;
+bottom: 25px;
+display: block;
+left: 28px;
+font-weight: bold;
+font-size: 20px;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.world{
+
+position: relative;
+bottom: 28px;
+display: block;
+left: 40px;
+display: block;
+
+
+}
+#photo{
+
+position: relative;
+bottom: 45px;
+left: 38px;
+display: block;
+color: white;
+font-size: 17px;
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.code{
+position: relative;
+ color: white;
+bottom: 60px;
+left: 28px;
+display: block;  
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+
+position: relative;
+bottom: 58px;
+display: block;
+border: 5px solid  rgb(193, 182, 252);
+left: 10px;
+
+}
+
+#submit {
+
+position: relative;
+bottom: 50px;
+font-size: 20px;
+font-weight: bold;
+border: 4px solid rgb(193, 182, 252);
+width: 100px;
+color: rgb(12, 12, 124);
+cursor: pointer;
+display: block;
+z-index: 2;
+padding: 5px;
+border-radius: 10px;
+
+}
+
+#submit:hover{
+background-color:black;
+transition: 00.3s;
+color:rgb(240, 227, 227);
+
+
+
+}
+
+
+
+
+#reset {
+
+    position: relative;
+    bottom: 111px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid rgb(193, 182, 252);
+    width: 100px;
+    color: rgb(12, 12, 124);
+    cursor: pointer;
+display: block;
+left: 160px;
+z-index:2;
+padding: 5px;
+border-radius: 10px;
+
+}
+
+#reset:hover{
+
+background-color:black;
+transition: 00.3s;
+color: white;
+
+
+}
+
+
+h1{
+
+color: white;
+position: relative;
+left: 50px;
+display: block;
+top: 1px;
+letter-spacing: 6px;
+text-align: center;
+
+
+
+}
+.container h1{
+
+    background-color: black;
+    left: 0px;
+
+}
+
+input:focus{
+
+    background-color:rgb(131, 255, 131);
+    color: black;
+    font-size: larger;
+
+}

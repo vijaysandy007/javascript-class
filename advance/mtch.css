@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(189, 235, 209);
+}
+
+#fix {
+    position: relative;
+    text-align: center;
+    border: 5px solid rgb(57, 18, 80);
+    width: 600px;
+    height: 300px;
+    left: 450px;
+    padding: 10px;
+    top: 80px;
+    font-size: 25px;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+}
+
+#last {
+    position: relative;
+    left: 18px;
+}

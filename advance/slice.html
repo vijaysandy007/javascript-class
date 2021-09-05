@@ -1,0 +1,77 @@
+<!DOCTYPE html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice</title>
+
+    <link rel="stylesheet" href="slice.css">
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Slice Method</h1><br>
+
+        <span id="output"></span> <br><br><br>
+
+        <div class="userbox">
+
+            Username: <input type="text" id="user"><br><br>
+        </div>
+
+        <div class="contact">
+            Phone: <input type="text" id="number"><br><br>
+        </div>
+        <div class="gmail1">
+            Email: <input type="gmail" id="gmail"><br><br>
+        </div>
+
+        <button type="button" onclick="validation()">PULL DATA</button>
+    </div>
+</body>
+
+
+
+<script>
+    var globalData = "Username:vijay123, Phone:944521230608, Email:vijay@gmail.com";
+
+    document.getElementById("output").innerHTML = globalData;
+
+    var res = globalData.indexOf("Username:") + 9;
+
+    var res1 = globalData.indexOf(",", res);
+    var res2 = globalData.slice(res, res1);
+
+    //----------------Username find out-------------------  -------//
+
+    var index = globalData.indexOf("Phone:") + 6;
+
+    var input = globalData.indexOf(",", index);
+    var input1 = globalData.slice(index, input);
+
+    //--------------------mobile number find out----------------------//
+
+    var mob = globalData.indexOf("Email:");
+
+    var mob2 = globalData.slice(mob);
+
+
+    function validation() {
+
+        var box1 = document.getElementById("user").value = res2;
+
+        var box2 = document.getElementById("number").value = input1;
+
+        var box3 = document.getElementById("gmail").value = mob2;
+
+
+
+    }
+</script>
+
+
+
+</html>

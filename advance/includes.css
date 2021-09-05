@@ -1,0 +1,22 @@
+body {
+    background-color: darkkhaki;
+}
+
+.center {
+    text-align: center;
+    top: 150px;
+    position: relative;
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    left: 500px;
+    background-color: rgb(232, 231, 238);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(109, 18, 145);
+}
+
+h1 {
+    font-size: 35px;
+    color: black;
+}

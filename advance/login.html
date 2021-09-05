@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script>
+        var globalData = [{
+                username: "vijay",
+                password: "people"
+            }, {
+                username: "surya",
+                password: "people"
+            }, {
+
+                username: "suresh",
+                password: "people"
+            }
+
+        ]
+
+
+        function validate() {
+
+            var person1, person2, result;
+
+            person1 = document.getElementById("username").value;
+            person2 = document.getElementById("password").value;
+            result = document.getElementById("output");
+
+            for (i = 0; i < globalData.length; i++) {
+                if (username == globalData[i].username && password == globalData[i].password) {
+                    result = document.getElementById("output").innerHTML = "login";
+
+                } else {
+
+
+                    result = document.getElementById("output").innerHTML = "wrong";
+                }
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+
+    UserName: <input type="text" id="username"><br> <br> Password: <input type="text" id="password"><br><br> Status: <span id="output"></span><br><br>
+    <button type="button" onclick="validate()">Login</button><br>
+
+</body>
+
+</html>

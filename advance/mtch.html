@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+
+    <link rel="stylesheet" href="mtch.css">
+
+    <script>
+        function evalidate() {
+
+            var email = document.getElementById("user").value;
+
+            var regex = !!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+
+            if (regex) {
+
+                var output = document.getElementById("output").innerHTML = "vaild email";
+                document.getElementById("output").style.color = "green";
+
+
+            } else {
+
+                output = document.getElementById("output").innerHTML = "invaild email";
+                document.getElementById("output").style.color = "red";
+
+            }
+        }
+        //-----------------------------------------------email----------------------------------------------//
+
+        function pvalidate() {
+
+            var phone = document.getElementById("number").value;
+
+            var regex1 = !!phone.match(/^([9]{1})([234789]{1})([0-9]{8})$/);
+
+            if (regex1) {
+
+                var output1 = document.getElementById("outpu1").innerHTML = "vaild mobile number";
+                document.getElementById("outpu1").style.color = "green";
+
+
+            } else {
+
+                output1 = document.getElementById("outpu1").innerHTML = "invaild number";
+                document.getElementById("outpu1").style.color = "red";
+
+            }
+
+
+        }
+
+
+        function uvalidate() {
+            var web = document.getElementById("url").value;
+
+            var regex2 = !!web.match(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/);
+
+            if (regex2) {
+
+                var output1 = document.getElementById("outpu2").innerHTML = "vaild URL";
+                document.getElementById("outpu2").style.color = "green";
+
+
+            } else {
+
+                output1 = document.getElementById("outpu2").innerHTML = "invaild URL";
+                document.getElementById("outpu2").style.color = "red";
+
+            }
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div id="fix">
+        <h1>Match function</h1>
+
+        Email: <input type="text" id="user" onblur="evalidate()"> <span id="output"></span><br><br> Phone: <input type="text" id="number" onblur="pvalidate()"> <span id="outpu1"></span><br><br>
+        <div id="last">
+            url: <input type="text" id="url" onblur="uvalidate()">
+            <span id="outpu2"></span>
+        </div>
+    </div>
+</body>
+
+</html>

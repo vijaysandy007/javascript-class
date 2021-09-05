@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Registration Form</title>
+<link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="success.html">
+
+</head>
+<body>
+    <div class="container">
+    <h1> Registration Form </h1>
+
+</div>
+    <form >
+            <!-- Username -->
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>&nbsp;&nbsp;&nbsp;
+       
+    <input type="text" id="unsername" name="unsername" placeholder="Enter username"  required  ><br> 
+        </div> 
+
+<br>
+ <!-- 1 username end-->
+
+  <!-- email -->
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>&nbsp;&nbsp;
+    
+    <input type="email" id="email" name="email" placeholder="Enter Email id"  required  ><br>
+        </div>
+        <br>
+         <!-- 2 email end -->
+
+
+          <!-- 3 Mobile number -->
+     <div class="input-container">
+        <i class="material-icons">&#xe0b0;</i>
+
+    <input type="number" id="number" name="number" min="10" placeholder=" Mobile number"  required  > <br><br>
+     </div>
+    
+ <!--  Mobile number end -->
+ 
+
+
+      <!-- 4 password -->
+    <div class="input-container">
+        <i class="fa fa-key icon"></i>&nbsp;&nbsp;
+
+    <input type="password" id="password" name="password" placeholder="Enter your password" required> <br> <br>
+    </div>
+    
+     <div class="gender">
+     <!-- 5 Gender -->
+    <label for="Gender"><b>Gender</b></label><br>
+    </div>
+     <!-- Gender label end -->
+   
+   
+     <!-- 6 Male-->
+     <div class="malelb">
+    <label for="male">Male</label>&nbsp;&nbsp;
+</div>
+
+    <div class="boy">
+    <input type="radio" id="male" name="Gender" value="male"  required><br>
+</div>
+     <!--  male end -->
+
+
+
+     <div class="femalelb">
+     <!--  7 female  -->
+    <label for="female">Female</label>
+</div>
+      
+     <div class="girl">
+
+     <input type="radio" id="female" name="Gender" value="female" required><br>
+    </div>
+     <!--  female end -->
+
+      <!--  8 others  -->
+
+      <div class="trans">
+    <label for="others">Others</label>
+</div>
+
+<div class="translb">
+    <input type="radio" id="others" name="Gender" value="others" required><br><br>
+
+</div>
+     <!--  others  end -->
+
+
+
+
+
+     <!--  9 URL Label  -->
+<div class="weblabel">
+
+    <label for="url">Enter your Website</label><br>
+
+      <!--  URL Label end  -->
+</div>
+        <!--  10 URL box  -->
+
+    <div class="webo">
+
+    <input type="url" id="url" name="url " placeholder="Enter your URL"><br>
+</div>
+    <br>
+ <!--   URL box end  -->
+
+ 
+ <!--  11 date of birth Label  -->
+
+ <div class="birthlb">
+    <label for="date">Data Birth</label>
+</div>
+    <br>
+
+    <!--   date of birth Label end  -->
+
+
+    <!--   12 date of birth box  -->
+
+    <div class="birtho">
+    <input type="date" id="date" name="date" >
+</div>
+    <br>
+    
+
+    <!--   date of birth box end -->
+    
+    <!--  13 Drop down box  -->
+<div class="worldlabel">
+        <label>Select Country</label>
+    </div>
+    
+        <br>
+        <div class="world">
+    <select> 
+     <option value="India" label="Country"></option>
+     <option value="America"> America </option>
+     <option value="Uk"> UK </option>
+     <option value="London"> London </option>
+     <option value="Africa"> Africa </option> 
+
+
+    </select>
+</div>
+ <!--   Drop down box end -->
+    <br> <br>
+
+
+
+     <!--  14 file upload  -->
+    
+    <input type="file" id="photo" name="photo" multiple ><br> <br>
+       <!--  14 file upload  end -->
+    
+    
+       <div class="code">
+<label>Address</label>
+</div>
+<br>
+
+
+<textarea name="message" rows="10" cols="30" placeholder="Enter your Address">
+
+</textarea>
+
+
+<br> <br>
+
+   <!--  15register  -->
+
+   <div class="submit">
+<input type="submit" id="submit" value="Register"  >&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!--  register end  -->
+</div>
+
+      <!--  15 reset -->
+      
+<input type="reset" id="reset" value="Reset">
+
+<!--  reset end -->
+
+
+    </form>
+
+
+
+
+</body>
+</html>
+
+

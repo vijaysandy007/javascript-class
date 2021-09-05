@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<script>
+
+function doReady(op) 
+{
+
+var num1 =document.getElementById("num1").value; 
+
+
+var num2 =document.getElementById("num2").value; 
+
+var Result;  
+
+if ( op=="Add")
+{
+
+
+
+Result = Number(num1) + Number(num2); 
+
+}
+
+
+ else if 
+(op == "Sub")
+{ 
+   
+    Result = num1-num2; 
+
+}
+
+
+else if  (op == "Div")
+{ 
+    Result = num1/num2;  
+
+}
+else if (op == "Mul")
+{ 
+    Result = num1*num2; 
+  
+
+}
+
+Result = dosquare(Result);
+
+var respan = document.getElementById("res");
+
+respan.innerHTML =Result;
+ if(Result==undefined) {
+
+respan.style.color ="red";
+
+ }
+
+ else{
+
+    respan.style.color="green";
+
+ }
+
+
+if (!isNaN(num1) && !isNaN(num2)){
+
+     document.getElementById("res").innerHTML ="Please enter valid inputs";    
+
+Result = document.getElementById("res").value =Result;
+
+
+
+
+}
+
+function dosquare (wr)
+{
+
+return wr * wr;
+
+}
+
+}
+ 
+</script>
+
+</head>
+<body>
+
+ <div class="box">  
+    <center>
+    <h1> calculator  </h1>
+<label> Number 1 </label><br>
+<input type="text" id="num1"><br><br> 
+
+<label> Number 2 </label><br>
+<input type="text" id="num2"><br><br> 
+
+
+
+<div class="button">
+
+<input type="button" value="Add" class="Add" onclick="doReady('Add')" >&nbsp;  
+ 
+
+<input type="button" value="Sub" class="Sub" onclick="doReady('Sub')">&nbsp;
+
+<input type="button" value="Div"  class="Div" onclick="doReady('Div')">&nbsp;
+ 
+<input type="button" value="Mul" class="mul" onclick="doReady('Mul')">&nbsp;<br><br> 
+ 
+
+
+<input type="text" id="res" placeholder="Loading..." >
+
+<label class="outputs">Result:</label>
+</center>
+</div>
+</div>
+</body>
+</html>

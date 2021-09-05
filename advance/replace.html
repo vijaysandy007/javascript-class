@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Replace Method</h1>
+        <div class="string">
+            String: <span id="res1"></span><br><br><br><br>
+        </div>
+        <div class="output">
+
+        </div>
+        <div class="place">
+            Find: <input type="text" id="find"><br><br>
+        </div>
+        <div class="place1">
+            Replace: <input type="text" id="replace"><br><br>
+        </div>
+        <input type="button" id="press" value="Replace insensitive" onclick="replaceData()">&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="button" id="press1" value="Replace sensitive" onclick="replaceDatas()">
+    </div>
+    </div>
+
+    <script>
+        var globalData = "username:vijay, phone:9445210608, email:Vijay@gmail.com";
+        document.getElementById("res1").innerHTML = globalData;
+
+
+
+        //---------------------------------- First switch-------------------------//
+
+        function replaceData() {
+            var input1, input2, replace;
+            input1 = document.getElementById("find").value;
+            var regex = new RegExp(input1, "g");
+            input2 = document.getElementById("replace").value;
+            replace = globalData.replace(regex, input2);
+            document.getElementById("res1").innerHTML = replace;
+
+
+        }
+
+        //------------------------------------ First switch End-------------------------//       
+
+        //------------------------------------ Second switch--------------------------// 
+        function replaceDatas() {
+
+            var input1, input2, replace;
+            input1 = document.getElementById("find").value;
+            var regex = new RegExp(input1, "gi");
+            input2 = document.getElementById("replace").value;
+            replace = globalData.replace(regex, input2);
+            document.getElementById("res1").innerHTML = replace;
+
+        }
+        //---------------------------------- Second switch End--------------------------//
+    </script>
+
+
+</body>
+
+</html>

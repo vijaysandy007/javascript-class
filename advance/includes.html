@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Includes</title>
+    <link rel="stylesheet" href="includes.css">
+</head>
+
+<script>
+    var globalData = ["vijay", "surya", "kishore", "madhan"];
+
+    function validation() {
+
+        var input1 = document.getElementById("user").value;
+
+        if (globalData.includes(input1)) {
+
+
+            var regex = document.getElementById("output").innerHTML = "not available";
+
+            document.getElementById("output").style.color = "red";
+
+            return false;
+
+            if (input1 == "") {
+
+                var regex = document.getElementById("output").innerHTML = "Type to check";
+
+            }
+
+        } else {
+
+
+            regex = document.getElementById("output").innerHTML = " available";
+            document.getElementById("output").style.color = "green";
+
+        }
+
+    }
+</script>
+
+
+<body>
+
+    <div class="center">
+        <h1>Userame Search with Includes</h1><br><br> UserName:
+        <input type="text" id="user" onblur="return validation()">
+        <span id="output"></span>
+    </div>
+
+
+
+</body>
+
+</html>
